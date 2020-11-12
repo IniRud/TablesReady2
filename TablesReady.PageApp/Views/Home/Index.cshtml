@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        <br />
+        <input type="submit" value="Logout" asp-controller="Account" asp-action="Logout" />
+    </div>
+*@
+<!-- sign up page -->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   @* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">*@
+
+    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+
+    <title>Table ready</title>
+</head>
+<body>
+
+    @*<nav class="navbar navbar-expand-lg navbar-dark top-bar fixed-top">
+
+    </nav>*@
+
+    <!-- end of Navigation bar -->
+    <!-- sign up page -->
+    <div class="container">
+        <div class="jumbotron startup">
+            <h1 class="display-4">Connect with your customers like never before. </h1>
+            <p class="lead">Grow your restaurant business with TableReady while managing your restaurants located in various locations through our simple software solution management system. Communicate, reward, and connect with their customers like never before.</p>
+            <hr class="my-4">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- end of sign up page -->
+    <!-- Table ready information section -->
+    <div class="container my-5">
+        <div class="container jumbotron section-two">
+            <h1 class="mb-4">Why Table Ready?</h1>
+            <div class="row">
+                <div class="col-lg text-left">
+                    <p>We enable the management of table wait lists and reservations by restaurants</p>
+                    <img class="img-fluid" src="~/Image/continental.jpg">
+                </div>
+                <div class="col-lg text-left">
+                    <p>We facilitate clients online reservations on webpage and mobile application</p>
+                    <img class="img-fluid" src="~/Image/onlinereservation.png">
+                </div>
+                <div class="col-lg text-left">
+                    <p>We provide a secure platform for transactions and rewards programs</p>
+                    <img class="img-fluid" src="~/Image/paymentMethod.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Table ready information Section -->
+    <!-- Newsletter Section -->
+    <div class="jumbotron jumbotron-fluid newsletters text-center">
+        <div class="container">
+            <h1 class="display-4">Earn discounts by subscribing to our newsletters!</h1>
+            <p class="lead">Don't miss out on our great offers & Receive deals from all our top vendors via e-mail</p>
+        </div>
+        <div class="offset-md-3">
+            <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputEmail4" class="sr-only">Password</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Subscribe Newsletter</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- End of Newsletter Section -->
+    <!-- Market Place Section -->
+    <div class="container jumbotron section-four">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <h3>We are helping professionals affected by the current pandemic with an opportunity to join virtual restaurants</h3>
+                <p>If you have a passion for cooking, a desire to exceed customer expectations and you  looking for a virtual restaurant to display your meals, you'll fit right in with our Table Ready virtual restaurant.</p>
+            </div>
+            <div class="col-4">
+                <img class="img-fluid" src="~/Image/meals.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- Market Place Section-->
+    <!--footer -->
+    @*<div class="card">
+            <div class="card-header bottom-bar text-white">
+                TableReady
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p></p>
+                    <footer class="blockquote-footer">&copy Table ready (Few images gotten from ig:@kitchenbutterfly, @inirude & Visa)<cite title="Source Title">Group 1</cite></footer>
+                </blockquote>
+            </div>
+        </div>*@
+    <!-- end of footer -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    @*<sctrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>*@
+</body>
+</html>

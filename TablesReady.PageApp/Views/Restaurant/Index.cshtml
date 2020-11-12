@@ -1,0 +1,52 @@
+﻿@model IEnumerable<TablesReady.Data.Domain.Restaurant>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>List of Restaurants</h3>
+
+<p>
+    <a asp-action="Create">Create New Restaurants</a>
+</p>
+<table class="table col-6">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.RestaurantId)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.RestaurantName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RestaurantBusinessNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RestaurantSignUpDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.RestaurantId)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.RestaurantName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RestaurantBusinessNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RestaurantSignUpDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.RestaurantId }) |
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
